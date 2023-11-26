@@ -13,12 +13,17 @@ const Content = () => {
         const handleClick2 = (name: string) => {
           console.log(`${name} was clicked`);
         }
+        const handleClick3 = (e: any) => {
+          console.log(e.target.innerText);
+        }
     
   return (
     <div>
         <p>Hello {handleNameChange()} !</p>
         <button onClick={handleClick}>Click It</button>
         <button onClick={() => handleClick2('zahid')}>Click too</button>
+        <button onClick={(e) => handleClick3(e)}>Click tree</button>
+       
     </div>
   )
 }
