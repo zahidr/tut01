@@ -10,10 +10,6 @@ const Content = () => {
         return setName(names[intRandom]);
         }
 
-        const handleClick = () => {
-          console.log('you clicked');
-        }
-
         const handleClick2 = (name: string) => {
           console.log(`${name} was clicked`);
         }
