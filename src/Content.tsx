@@ -18,12 +18,12 @@ const Content = () => {
         }
     
   return (
-    <div>
+    <main>
         <p>Hello {name} !</p>
         <button onClick={handleNameChange}>Change Name</button>
         <button onClick={() => handleClick2('zahid')}>Click too</button>
         <button onClick={(e) => handleClick3(e)}>Click tree</button>       
-    </div>
+    </main>
   )
 }
 
