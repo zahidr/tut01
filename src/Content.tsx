@@ -1,8 +1,9 @@
+import './css/content.css'
 import { useState } from "react";
 
 const Content = () => {
 
-        const [name,setName]=useState('Zahid');
+        const [name,setName]=useState('zahid');
 
         const handleNameChange = () => {
             const names = ['zahid','Amin','Kharal'];
@@ -13,6 +14,7 @@ const Content = () => {
         const handleClick2 = (name: string) => {
           console.log(`${name} was clicked`);
         }
+
         const handleClick3 = (e: any) => {
           console.log(e.target.innerText);
         }
@@ -22,7 +24,7 @@ const Content = () => {
         <p>Hello {name} !</p>
         <button onClick={handleNameChange}>Change Name</button>
         <button onClick={() => handleClick2('zahid')}>Click too</button>
-        <button onClick={(e) => handleClick3(e)}>Click tree</button>       
+        <button onClick={(e) => handleClick3(e)}>Click tree</button>
     </main>
   )
 }
