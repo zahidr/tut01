@@ -15,7 +15,7 @@ const Content = () => {
           console.log(`${name} was clicked`);
         }
 
-        const handleClick3 = (e: any) => {
+        const handleClick3 = (e:any ) => {
           console.log(e.target.innerText);
         }
     
